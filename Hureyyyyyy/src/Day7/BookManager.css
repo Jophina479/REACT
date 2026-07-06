@@ -1,0 +1,140 @@
+/* Main Container */
+.book-manager {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  border-radius: 10px;
+}
+
+/* Heading */
+.book-manager h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.book-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 220px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button */
+.book-form button {
+  padding: 12px 25px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: end;
+  transition: 0.3s;
+}
+
+.book-form button:hover {
+  background: #0056b3;
+}
+
+/* Book List */
+.book-list {
+  margin-top: 30px;
+}
+
+.book-list h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Book Cards */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background: white;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.book-card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.book-card strong {
+  color: #222;
+}
+
+/* Delete Button */
+.book-card button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #dc3545;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-card button:hover {
+  background: #b52b38;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .book-form {
+    flex-direction: column;
+  }
+
+  .book-form button {
+    width: 100%;
+  }
+}

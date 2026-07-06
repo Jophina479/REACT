@@ -3,11 +3,13 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { DynamicListTodos } from './DynamicListTodos.jsx'
+import { BookManager } from './Day7/BookManager.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RenderingListOfObject/>
     <Usercard/>
     <DynamicListTodos/>
+    <BookManager/>
   </StrictMode>,
 )
